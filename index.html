@@ -1,31 +1,172 @@
 <!doctype html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tea House</title>
-  <link rel="shortcut icon" href="./images/cup.png" type="image/x-icon">
 
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea House</title>
+    <link rel="shortcut icon" href="./images/cup.png" type="image/x-icon">
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;800&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/2505059374.js" crossorigin="anonymous"></script>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        dark1: '#1C1C1C',
+                        dark2: '#494949',
+                        dark3: '#777777',
+                    },
+                    fontFamily: {
+                        'manrope': ['Manrope', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
 </head>
-<body>
+
+<body class="font-manrope">
     <header>
 
+        <!-- Head Banner Section -->
+        <section class="pt-10">
+            <div class="container mx-auto md:flex px-5">
+                <div class="w-full md:w-1/2 space-y-7">
+                    <h1 class="text-dark1 text-7xl font-bold">It's good tea time at The Tea House</h1>
+                    <p class="text-dark3 text-lg">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your
+                        Taste Buds.</p>
+                    <button
+                        class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white font-lg text-center p-4 rounded-lg flex items-center gap-2">Explore
+                        More <span><img src="./images/arrow.png" alt=""></span></button>
+                </div>
+                <div class="w-full md:w-1/2">
+                    <div class="relative mx-auto">
+                        <div>
+                            <img src="./images/banner.png" alt="">
+                        </div>
+                        <div class="flex items-center justify-center gap-3 bg-white w-64 h-24 shadow-lg m-3 rounded-xl">
+                            <div>
+                                <i class="fa-solid fa-star text-yellow-300 text-4xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-dark1 text-3xl">5.00</h3>
+                                <p class="text-dark3">Trust Pilot Ratings</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </section>
     </header>
 
     <!-- Main Section -->
-    <main>
+    <main class="container">
+        <!-- Featured Section -->
+        <section>
+
+        </section>
+
+        <!-- Present Section -->
+        <Section>
+
+        </Section>
+
+
+        <!-- Client Section -->
+        <section>
+
+        </section>
+
+
+        <!-- News and Event Section -->
+        <section>
+
+        </section>
 
     </main>
 
 
     <!-- Footer Section -->
-    <footer>
-        
+    <footer class="bg-gradient-to-r from-[#FFF3EB] to-[#FFE6E6] mt-20">
+        <section class="container mx-auto pt-10">
+            <div class="flex justify-between items-center gap-5 p-5">
+                <div>
+                    <img src="./images/cup.png" alt="">
+                </div>
+                <div class="flex items-center gap-4">
+                    <p class="text-dark2 text-xl">Ready to get started?</p>
+                    <button
+                        class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white font-lg text-center p-4 rounded-lg flex items-center gap-2">Get Started</button>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 mt-20 p-5">
+                <div class="space-y-5">
+                    <h3 class="text-dark1 text-xl font-semibold">Quick Links</h3>
+                    <ul class="text-dark2 space-y-3">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us</a></li>
+                    <li><a href="">Insurance</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-5">
+                    <h3 class="text-dark1 text-xl font-semibold">Our Service</h3>
+                    <ul class="text-dark2 space-y-3">
+                    <li><a href="">Life Insurance</a></li>
+                    <li><a href="">Car Insurance</a></li>
+                    <li><a href="">Health Insurance</a></li>
+                    <li><a href="">House Insurance</a></li>
+                    </ul>
+                </div>
+                <div class="space-y-5">
+                    <h3 class="text-dark1 text-xl font-semibold">Help</h3>
+                    <ul class="text-dark2 space-y-3">
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-dark1 text-2xl font-semibold">
+                        Subscribe to our newsletter</h2>
+                    <form action="" class="flex gap-3 items-center mt-10 h-12">
+                        <input type="email" name="" id="" placeholder="Email address" class="border-b-2 border-solid border-[#49494988] bg-transparent h-full text-sm">
+                        <button
+                        class="bg-gradient-to-r from-[#FF8938] to-[#FF0000] text-white font-lg h-8 w-8 rounded-full">
+                        <i class="fa-solid fa-chevron-right"></i></button>
+                    </form>
+                    <div>
+                        <ul class="flex gap-6 text-2xl mt-10">
+                            <li><a href="https://www.facebook.com/mfarhad.attari.qadari/"><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://github.com/mfarhadattari"><i class="fa-brands fa-github"></i></a></li>
+                            <li><a href=""><i class="fa-solid fa-globe"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center text-dark3 p-10">
+                <p> © 2027 UIDesign.to - All rights reserved.</p>
+            </div>
+            
+        </section>
     </footer>
 
 
 </body>
+
 </html>
